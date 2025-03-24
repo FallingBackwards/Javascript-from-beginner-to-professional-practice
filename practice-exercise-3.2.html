@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        let shoppingList = ["milk","bread", "apples"];
+        shoppingList.splice(1, 1, "bananas", "eggs");
+        console.log(shoppingList[shoppingList.length - 1]);
+        shoppingList.pop();
+        shoppingList.sort();
+        //find and output the index value of milk
+        console.log(shoppingList.indexOf("milk"));
+        //after bananas add carrots and lettuce
+        shoppingList.splice(1, 0, "carrots", "lettuce");
+        let shoppingList2 = ["juice", "pop"];
+        shoppingList = shoppingList.concat(shoppingList2);
+        shoppingList = shoppingList.concat(shoppingList2);
+        console.log(shoppingList.lastIndexOf("pop"));
+        console.log(shoppingList);
+        alert(shoppingList[0])
+    </script>
+</head>

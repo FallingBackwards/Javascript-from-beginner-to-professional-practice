@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        let valinch = 0;
+        let valpound = 0;
+        const inchdivcm = (1/2.54)
+        const poundsdivkilo = 2.2046
+        let val1 = prompt("value of height in inches")
+        let val2 = prompt("value of weight in pounds")
+        console.log("BMI is: ", (val2/poundsdivkilo)/((val1/inchdivcm/100)**(2)))
+    </script>
+</head>
