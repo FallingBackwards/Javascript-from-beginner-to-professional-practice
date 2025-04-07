@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        let maxNumber = 5;
+        let maxAttemps = 3
+        let attemps = 0
+        let number = 0
+        let randomNumber = Math.floor(Math.random(maxNumber))+1;
+        alert(randomNumber)
+        let incorrect = true;
+        while(incorrect && attemps<=3) {
+            number = prompt("Choose a number between 1 and 5");
+            number = Number(number);
+            incorrect = number == randomNumber ? false : true;
+            if(incorrect==false) {
+                alert("You guessed correctly!!")
+            } else if(incorrect==true) {
+                if(number>randomNumber){
+                    alert(`You guessed wrong. Your number was higuer than the correct answer`)
+                } else if(number<randomNumber){
+                    alert(`You guessed wrong. Your number was lower than the correct answer`)                    
+                }
+            }
+        }
+    </script>
+</head>

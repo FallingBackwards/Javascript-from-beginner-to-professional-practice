@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        let options = ["rock", "paper", "scissor"];
+        let player = prompt("rock, paper or scissor. choose.");
+        let computer = options[Math.floor(Math.random()*3)];
+        switch(player == computer){
+            case true:
+                alert("tie");
+                break;
+            case false: 
+                if(player == "rock" && computer == "paper") {
+                    alert(`player:${player} computer:${computer} you lose`);
+                } else if(player == "rock" && computer == "scissor") {
+                    alert(`player:${player} computer:${computer} you win`);
+                } else if(player == "paper" && computer == "scissor") {
+                    alert(`player:${player} computer:${computer} you lose`);
+                } else if(player == "paper" && computer == "rock") {
+                    alert(`player:${player} computer:${computer} you win`);
+                } else if(player == "scissor" && computer == "rock") {
+                    alert(`player:${player} computer:${computer} you lose`);
+                } else if(player == "scissor" && computer == "paper") {
+                    alert(`player:${player} computer:${computer} you win`);
+                } else {
+                    alert("input not recognized");
+                }
+        }
+    </script>
+</head>
